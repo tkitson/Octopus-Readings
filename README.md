@@ -1,1 +1,1 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+Rails app which displays graphs of energy consumption taken from a smart meter API next to graphs of local weather data - comparing outside temperature with gas and electricity usage.
