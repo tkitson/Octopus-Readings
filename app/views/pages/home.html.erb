@@ -1,2 +1,12 @@
 <h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+
+<% @arr %>
+
+
+
+<p>Electricity</p>
+
+<%= line_chart @elec_response.map { |d| [d["interval_start"], d["consumption"]] }, ytitle: "ELECTRICITY kWh" %>
+<%= line_chart @gas_response.map { |d| [d["interval_start"], d["consumption"]] }, ytitle: "GAS - m^3" %>
+<%= line_chart @arr[0..48].map { |d| [d[0], d[1]]}, ytitle: "Temperature Celcius" %>
